@@ -12,9 +12,9 @@ import {RecipesResolverService} from './recipes-resolver.service';
 
 const recipeRoutes: Routes = [
 
-  /* localhost:4200/recipes */
+  /* localhost:4200/recipes , when Lazy loading enabled */
   { 
-     path: 'recipes', 
+     path: '', 
      component: RecipesComponent,
      canActivate: [AuthGuard],
      children: [

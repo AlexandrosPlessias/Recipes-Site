@@ -11,9 +11,8 @@ import { Ingredient } from './ingredient.model';
 @Injectable({ providedIn: 'root' })
 export class DataStorageService {
 
-  // CHANGE WITH YOUR BACKEND URL I USE FIREBASE
-  private RECIPE_BOOK_DB = 'https://ng-recipe-book-XXXXXXX-default-rtdb.XXXXXXXX-XXXXX1.firebasedatabase.app/recipes.json';
-  private RECIPE_INGREDIENT_DB = 'https://ng-recipe-book-XXXXXXX-default-rtdb.XXXXXXXX-XXXXX1.firebasedatabase.app/ingradients.json';
+  private RECIPE_BOOK_DB = 'https://ng-recipe-book-4d747-default-rtdb.europe-west1.firebasedatabase.app/recipes.json';
+  private RECIPE_INGREDIENT_DB = 'https://ng-recipe-book-4d747-default-rtdb.europe-west1.firebasedatabase.app/ingradients.json';
   constructor(private http: HttpClient, 
     private recipeService: RecipeService,
     private shoppingListService: ShoppingListService,
