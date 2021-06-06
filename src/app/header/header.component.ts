@@ -32,11 +32,13 @@ export class HeaderComponent /*implements OnInit*/ {
   
     onSaveData() {
       this.dataStorageService.storeRecipes();
+      this.dataStorageService.storeIngredients();
     }
   
     onFetchData() {
       console.log('In: onFetchData()');
       this.dataStorageService.fetchRecipes().subscribe();
+      this.dataStorageService.fetchIngredients().subscribe();
     }
   
     onLogOut() {
